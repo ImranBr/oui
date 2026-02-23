@@ -1,8 +1,15 @@
 #include "Dog.hpp"
 
-int	main(void)
+int main()
 {
-	Animal *a = new Dog();
-	a->makeSound();
-	delete a;
+    std::cout << "=== Test Dog via Animal* ===" << std::endl;
+
+    const Animal* a = new Dog();
+
+    std::cout << "Type: " << a->getType() << std::endl;
+    a->makeSound();
+
+    delete a;
+
+    return 0;
 }
