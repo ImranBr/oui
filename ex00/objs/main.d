@@ -1,1 +1,1 @@
-objs/main.o: main.cpp Animal.hpp
+objs/main.o: main.cpp Dog.hpp Animal.hpp

@@ -1,8 +1,8 @@
-#include "Animal.hpp"
+#include "Dog.hpp"
 
-int main ()
+int	main(void)
 {
-    Animal(Cat);
-    Cat.makeSound();
-    Cat.getType();
+	Animal *a = new Dog();
+	a->makeSound();
+	delete a;
 }

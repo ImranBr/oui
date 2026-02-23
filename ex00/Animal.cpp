@@ -1,6 +1,6 @@
 #include "Animal.hpp"
 
-Animal::Animal()
+Animal::Animal() : _type("Animal")
 {
     std::cout << "Animal default constructor called." << std::endl;
 }
@@ -18,7 +18,11 @@ Animal::Animal(const Animal &other) : _type(other._type)
 
 Animal &Animal::operator=(const Animal &other)
 {
-    _type = other._type;
+    if (this != &other)
+    {
+        _type = other._type;
+        std::cout << "Animal assigned." << std::endl;
+    }
     return (*this);
 }
 
@@ -36,4 +40,3 @@ void Animal::makeSound() const
 {
     std::cout << "Animal makes sound." << std::endl;
 }
-
