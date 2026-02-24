@@ -27,7 +27,7 @@ int main()
     delete c;
     std::cout << std::endl;
 
-    std::cout << "=== Test Cat via WrongAnimal* ===" << std::endl;
+    std::cout << "=== Test WrongCat via WrongAnimal* ===" << std::endl;
     const WrongAnimal* w = new WrongCat();
     std::cout << "Type: " << w->getType() << std::endl;
     w->makeSound();
