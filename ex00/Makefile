@@ -2,7 +2,7 @@ CC = c++
 CFLAGS = -Werror -Wextra -Wall -std=c++98 -g3 -MMD
 OBJ_DIR = objs
 
-SRCS = main.cpp Animal.cpp Dog.cpp
+SRCS = main.cpp Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp
 OBJS = $(patsubst %.cpp,$(OBJ_DIR)/%.o,$(SRCS))
 
 DEPENDS = $(OBJS:.o=.d)
