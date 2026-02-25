@@ -27,11 +27,16 @@ int main()
     delete c;
     std::cout << std::endl;
 
-    std::cout << "=== Test WrongCat via WrongAnimal* ===" << std::endl;
-    const WrongAnimal* w = new WrongCat();
-    std::cout << "Type: " << w->getType() << std::endl;
-    w->makeSound();
-    delete w;
+    // std::cout << "=== Test WrongCat via WrongAnimal* ===" << std::endl;
+    // const WrongAnimal* w = new WrongCat();
+    // std::cout << "Type: " << w->getType() << std::endl;
+    // w->makeSound();
+    // delete w;
+
+    std::cout << "=== Deep copy test with Dog ===" << std::endl;
+    Dog original;
+    original.setIdea(0)
+    
 
     return 0;
 }
