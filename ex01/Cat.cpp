@@ -31,3 +31,8 @@ void Cat::makeSound() const
 {
     std::cout << "Cat makes sound." << std::endl;
 }
+
+Brain* Cat::getBrain() const
+{
+    return _brain;
+}
