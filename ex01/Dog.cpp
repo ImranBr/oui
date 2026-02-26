@@ -36,3 +36,23 @@ Brain* Dog::getBrain() const
 {
     return _brain;
 }
+
+void Dog::setIdea(int i, const std::string &idea)
+{
+	if (i < 0 || i >= 100)
+	{
+		std::cout << "Index out of range, no idea." << std::endl;
+		return ;
+	}
+	_brain->setIdea(i, idea);
+}
+
+std::string Dog::getIdea(int i) const
+{
+	if (i < 0 || i >= 100)
+	{
+		std::cout << "Index out of range, no idea." << std::endl;
+		return ("");
+	}
+    return (_brain->getIdea(i));
+}
