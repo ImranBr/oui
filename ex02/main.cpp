@@ -32,6 +32,7 @@ int	main(void)
 	std::cout << "Type: " << w->getType() << std::endl;
 	w->makeSound();
 	delete w;
+	std::cout << std::endl;
 
 	std::cout << "=== Deep copy test (Dog) ===" << std::endl;
 	{
