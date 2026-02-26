@@ -6,12 +6,12 @@
 
 int	main(void)
 {
-	std::cout << "=== Test via Animal* ===" << std::endl;
-	const Animal *meta = new Animal();
-	std::cout << "Type: " << meta->getType() << std::endl;
-	meta->makeSound();
-	delete meta;
-	std::cout << std::endl;
+	// std::cout << "=== Test via Animal* ===" << std::endl;
+	// const Animal *meta = new Animal();
+	// std::cout << "Type: " << meta->getType() << std::endl;
+	// meta->makeSound();
+	// delete meta;
+	// std::cout << std::endl;
 
 	std::cout << "=== Test Dog via Animal* ===" << std::endl;
 	const Animal *d = new Dog();
